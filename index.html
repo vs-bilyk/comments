@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Задание</title>
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/pubsub.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+<section class="block">
+	<article class="block__content">
+		text
+	</article>
+
+	<div class="block__comments comments">
+		<h1 class="comments__header"></h1>
+
+		<ul class="comments__list">  
+			<li class="comments__item">
+				<div class="comments__item-wrap">
+					<img class="comments__item-foto comments__item-foto_size-foto" src="" alt="foto">
+
+					<div class="comments__item-content">
+						<span class="comments__item-text">Вы не правы!</span>
+						<a class="comments__item-answer" href="#" onclick="return false">Ответить</a>
+						<button class="comments__item-ignore">Заблокировать</button>
+					</div>
+				</div>
+
+				<ul class="comments__answers">
+					<li class="comments__item">
+						<div class="comments__item-wrap">
+							<img class="comments__item-foto comments__item-foto_size-foto" src="" alt="foto">
+							
+							<div class="comments__item-content">
+								<span class="comments__item-text">Прав!</span>
+								<button class="comments__item-ignore">Заблокировать</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<form class="comments__add-new">
+			<h2 class="comments__add-header">Добавить комментарий</h2>
+			<img class="comments__add-foto comments__item-foto_size-foto" src="" alt="foto">
+			<textarea class="commemts__add-new-text" name="comment"></textarea>
+			<input class="comments__add-new-submit" type="submit" value="Отправить">
+		</form>
+    </div>
+</section>
+
+</body>
+</html>
